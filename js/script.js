@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const coverBackground = document.querySelector(".cover-background");
   const images = [
-    "../riverbed/img/agomoni.JPG",
-    "../riverbed/img/PHE_0768.JPG",
+    "../riverbed/img/agomoni.jpeg",
+    "../riverbed/img/PHE_0768.jpeg",
     "../riverbed/img/tata-1.jpeg",
     "../riverbed/img/roadshow.jpeg",
   ];
