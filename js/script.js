@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
 
   function changeBackgroundImage() {
-    coverBackground.style.backgroundImage = `linear-gradient(rgb(0 0 0 / 80%), rgb(255 255 255 / 19%)),url("${images[currentIndex]}")`;
+    coverBackground.style.backgroundImage = `linear-gradient(rgb(0 0 0 / 80%), rgb(255 255 255 / 19%)),url(${images[currentIndex]})`;
     currentIndex = (currentIndex + 1) % images.length;
   }
 

@@ -4067,7 +4067,7 @@ header .left-nav .navbar-nav:before {
 .fix-background {
     position: relative;
     background-repeat: no-repeat !important;
-    background-image: linear-gradient(rgb(0 0 0 / 71%), rgb(0 0 0 / 0%)), url(../img/tata-1.jpeg);
+    background-image: linear-gradient(rgb(0 0 0 / 71%), rgb(0 0 0 / 0%)), url("../img/");
     overflow: hidden
 }
 
