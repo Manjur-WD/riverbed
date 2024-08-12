@@ -102,8 +102,11 @@
                         <span
                             class="ps-25px pe-25px mb-20px text-uppercase text-base-color fs-12 lh-40 fw-700 border-radius-100px bg-gradient-very-light-gray-transparent d-inline-flex justify-content-center justify-content-xl-start">
                             <i class="bi bi-chat-square-dots fs-16 me-5px"></i>Get in Touch</span>
-                        <h3 class="text-dark-gray ls-minus-2px fw-700">We are here to assist you at our various locations.</h3>
-                        <p class="mb-35px w-90 lg-w-100 sm-mb-25px">For any inquiries or support, please feel free to reach out to us. We are committed to providing you with excellent service and assistance.</p>
+                        <h3 class="text-dark-gray ls-minus-2px fw-700">We are here to assist you at our various
+                            locations.</h3>
+                        <p class="mb-35px w-90 lg-w-100 sm-mb-25px">For any inquiries or support, please feel free to
+                            reach out to us. We are committed to providing you with excellent service and assistance.
+                        </p>
                         <a href="tel:+91 9830832000"
                             class="btn btn-extra-large btn-switch-text btn-gradient-purple-pink left-icon btn-rounded me-10px ls-0px">
                             <span>
@@ -126,25 +129,34 @@
                                 </div>
                                 <div class="col-lg-6 col-sm-6 bg-white box-shadow-extra-large p-40px xl-p-30px">
                                     <div class="services-box-content last-paragraph-no-margin">
-                                        <span class="d-block text-dark-gray primary-font fw-700 fs-19 mb-10px">Riverbed Events Private Limited</span>
-                                        <p><img src="./img/map-pin.svg" alt="location"> 6A, Rani Bhabani Road, Trikon Park, Kolkata - 700026 West Bengal, India</p>
-                                        <p><img src="./img/map-pin.svg" alt="location"> 6B, Janak Road, Lake Market, Kolkata - 700029 West Bengal, India</p>
-    
+                                        <span class="d-block text-dark-gray primary-font fw-700 fs-19 mb-10px">Riverbed
+                                            Events Private Limited</span>
+                                        <p><img src="./img/map-pin.svg" alt="location"> 6A, Rani Bhabani Road, Trikon
+                                            Park, Kolkata - 700026 West Bengal, India</p>
+                                        <p><img src="./img/map-pin.svg" alt="location"> 6B, Janak Road, Lake Market,
+                                            Kolkata - 700029 West Bengal, India</p>
+
                                         <div class="text-dark-gray fw-600 mt-5">
-                                            <span class="d-block"><a class="text-dark-gray fw-600" href="tel:+91 9830832000"><i class="feather icon-feather-phone-call icon-small me-10px text-dark-gray"></i>+91 9830832000</a></span>
-                                            <span class="d-block"><a class="text-dark-gray fw-600" href="tel:+91 9830836000"><i class="feather icon-feather-phone-call icon-small me-10px text-dark-gray"></i>+91 9830836000</a></span>
+                                            <span class="d-block"><a class="text-dark-gray fw-600"
+                                                    href="tel:+91 9830832000"><i
+                                                        class="feather icon-feather-phone-call icon-small me-10px text-dark-gray"></i>+91
+                                                    9830832000</a></span>
+                                            <span class="d-block"><a class="text-dark-gray fw-600"
+                                                    href="tel:+91 9830836000"><i
+                                                        class="feather icon-feather-phone-call icon-small me-10px text-dark-gray"></i>+91
+                                                    9830836000</a></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
 
     <section class="bg-very-light-gray position-relative">
@@ -176,7 +188,7 @@
                                 <span class="d-block"><a class="text-dark-gray fw-600" href="tel:+91 9830836000">+91
                                         9830836000</a></span>
                             </div>
-                            
+
 
                         </div>
                     </div>
@@ -184,7 +196,7 @@
                 <div class="col-lg-6 offset-xl-1 md-mb-50px sm-mb-0"
                     data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <h3 class="text-dark-gray ls-minus-2px fw-700">Looking for any help?</h3>
-                    <form action="email-templates/contact-form.php" method="post" class="contact-form-style-03">
+                    <form name="submit-to-google-sheet" class="contact-form-style-03">
                         <label for="exampleInputEmail1"
                             class="form-label fs-13 text-uppercase text-dark-gray fw-700 mb-0">Enter your name*</label>
                         <div class="position-relative form-group mb-20px">
@@ -217,9 +229,9 @@
                             </div>
                             <div
                                 class="col-xl-5 col-lg-12 col-sm-5 text-center text-sm-end text-lg-start text-xl-end xs-mt-25px">
-                                <input id="exampleInputEmail3" type="hidden" name="redirect" value>
-                                <button class="btn bg-extra btn-medium btn-round-edge btn-box-shadow submit"
-                                    type="submit">Send message</button>
+
+                                <button class="btn bg-extra btn-medium btn-round-edge btn-box-shadow" type="submit">Send
+                                    message</button>
                             </div>
                             <div class="col-12 mt-20px mb-0 text-center text-md-start">
                                 <div class="form-results d-none"></div>
@@ -369,6 +381,16 @@
         }
 
         requestAnimationFrame(raf)
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxo1JfNrMmb_kBLwnP34UxJmo5sZQDvZqnsRo1OCYsuh717NU2dSlUtqT4MziphUt9E/exec'; // Replace 'Your URL will be here' with the URL of your Google Apps Script
+        const form = document.forms['submit-to-google-sheet'];
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("form submitted successfully !!!!"))
+                .catch(error => console.error('Error!', error.message));
+        });
     </script>
 
 </body>
