@@ -16,6 +16,10 @@ section {
     padding-bottom: 110px
 }
 
+.bg-extra{
+    background-color: #ea5b28;
+}
+
 a,
 body {
     color: var(--medium-gray)
