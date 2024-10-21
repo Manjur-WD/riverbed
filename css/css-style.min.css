@@ -8925,7 +8925,21 @@ header.sticky .navbar.disable-fixed {
 .navbar .navbar-nav .nav-item .nav-link.active,
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item:hover .nav-link {
-    opacity: .6
+    color: #dc4a38 !important;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active::after,
+.navbar .navbar-nav .nav-item.active .nav-link::after,
+.navbar .navbar-nav .nav-item:hover .nav-link::after{
+    content: "";
+    height: 5px;
+    width: 20px;
+    border-radius: 25px;
+    background-color: #dc4a38;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -22991,7 +23005,7 @@ footer .footer-navbar .nav-item:last-child a {
 }
 
 .slide-services {
-    min-height: 620px;
+    min-height: 570px;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -23007,6 +23021,14 @@ footer .footer-navbar .nav-item:last-child a {
 
 .about-gallery .swiper-slide img:nth-child(odd){
 height: 300px;
+}
+
+.slide-services h3{
+    background-color: #e35c09;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    border: 1px solid gray;
 }
 
 /*# sourceMappingURL=style.min.css.map */
