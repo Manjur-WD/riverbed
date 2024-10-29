@@ -23028,7 +23028,15 @@ height: 300px;
     color: white;
     font-weight: 900;
     text-align: center;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
+    margin-top: 2px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    font-size: clamp(16px, 1vw, 22px);  
+}
+
+.cover-background h1{
+    font-size: clamp(25px, 4.5vw, 40px);
+    line-height: 1.2;
 }
 
 /*# sourceMappingURL=style.min.css.map */
