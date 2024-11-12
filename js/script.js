@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const coverBackground = document.querySelector(".cover-background");
   const images = [
-    "../riverbed/img/agomoni.jpeg",
-    "../riverbed/img/PHE_0768.jpeg",
-    "../riverbed/img/tata-1.jpeg",
-    "../riverbed/img/roadshow.jpeg",
+    "../riverbed/img/banner-1.webp",
+    "../riverbed/img/banner-2.webp",
+    "../riverbed/img/banner-3.webp",
+    "../riverbed/img/banner-4.webp",
   ];
 
   let currentIndex = 0;

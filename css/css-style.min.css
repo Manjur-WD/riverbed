@@ -16,7 +16,7 @@ section {
     padding-bottom: 110px
 }
 
-.bg-extra{
+.bg-extra {
     background-color: #ea5b28;
 }
 
@@ -8930,7 +8930,7 @@ header.sticky .navbar.disable-fixed {
 
 .navbar .navbar-nav .nav-item .nav-link.active::after,
 .navbar .navbar-nav .nav-item.active .nav-link::after,
-.navbar .navbar-nav .nav-item:hover .nav-link::after{
+.navbar .navbar-nav .nav-item:hover .nav-link::after {
     content: "";
     height: 5px;
     width: 20px;
@@ -22911,9 +22911,7 @@ footer.big-footer {
     padding-bottom: 140px
 }
 
-footer .footer-logo img {
-
-}
+footer .footer-logo img {}
 
 footer ul {
     padding: 0;
@@ -23004,11 +23002,41 @@ footer .footer-navbar .nav-item:last-child a {
     max-height: 55px !important
 }
 
+.service-slider.owl-carousel .owl-stage-outer{
+    padding:  50px 0;
+}
+
 .slide-services {
-    min-height: 570px;
+    min-height: 450px;
     background-color: white;
-    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 5px 10px #E4E0E1;
+    transition: 0.3s;
+}
+
+.slide-services:hover{
+    scale: 1.03;
+}
+
+.slide-services p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.slide-services img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cta-btn {
+    background-color: #e46319;
+    color: white;
+}
+
+.cta-btn:hover{
+    background-color: #ffffff;
+    color: black;
 }
 
 .feature-box>img {
@@ -23019,22 +23047,24 @@ footer .footer-navbar .nav-item:last-child a {
     width: 100%;
 }
 
-.about-gallery .swiper-slide img:nth-child(odd){
-height: 300px;
+.about-gallery .swiper-slide img:nth-child(odd) {
+    height: 300px;
 }
 
-.slide-services h3{
+.slide-services h3 {
     background-color: #e35c09;
     color: white;
     font-weight: 900;
     text-align: center;
     /* border: 1px solid gray; */
-    margin-top: 2px;
+    margin-top: -20px;
     clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
-    font-size: clamp(16px, 1vw, 22px);  
+    font-size: clamp(16px, 1vw, 22px);
+
 }
 
-.cover-background h1{
+
+.cover-background h1 {
     font-size: clamp(25px, 4.5vw, 40px);
     line-height: 1.2;
 }
